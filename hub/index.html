@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Nutrition Hub — EN</title><style>
+:root{--accent:#2d6cdf}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,Segoe UI,Roboto,Arial;background:#f7f9fc;color:#111}
+header{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:10}
+.wrap{width:min(1100px,92vw);margin:auto}
+nav{display:flex;align-items:center;gap:12px;padding:10px 0;flex-wrap:wrap}
+nav a, nav select{padding:8px 10px;border-radius:10px;color:#111;text-decoration:none;border:1px solid transparent}
+nav a:hover{background:#eef2f7}
+h1{font-size:28px;margin:16px 0}
+h2{font-size:22px;margin:14px 0}
+.section{padding:22px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:12px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+footer{border-top:1px solid #e5e7eb;background:#fbfdff;color:#334155;padding:20px 0;margin-top:22px}
+.muted{color:#475569}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+select,input[type=search]{padding:8px 10px;border:1px solid #d1d5db;border-radius:10px;background:#fff}
+.tag{display:inline-block;background:#eef2f7;border-radius:999px;padding:3px 8px;font-size:12px;margin-right:6px}
+.note{background:#fef3c7;border:1px solid #fde68a;border-radius:10px;padding:10px}
+ul.inline{display:flex;flex-wrap:wrap;gap:8px;padding-left:0;list-style:none}
+ul.inline li a{border:1px solid #e5e7eb;background:#fff;border-radius:999px;padding:6px 10px;text-decoration:none;color:#111}
+.small{font-size:12px}
+</style></head>
+<body>
+<header><div class="wrap"><nav>
+  <a href="index.html"><strong>ICMR‑NIN · NULRISC & COPRIME</strong></a>
+  <a href="index.html" >Home</a>
+  <a href="hub/index.html" style="background:#eef2f7">Nutrition Hub</a>
+  <a href="toolkits/index.html" >Toolkits</a>
+  <a href="research/index.html" >Research</a>
+  <a href="events/index.html" >Events</a>
+  <a href="faqs.html" >FAQs</a>
+  <a href="contact.html" >Contact</a>
+  <select id="lang" title="Language"><option value="en" selected>English</option><option value="hi">हिन्दी</option></select>
+</nav></div></header>
+<script>
+document.addEventListener('change', function(e){ if(e.target.id==='lang'){ var val=e.target.value; if(val==='hi'){ location.href='hi/index.html'; } else { location.href='index.html'; } } });
+</script>
+<main class="wrap">
+<section class="section">
+  <h1>Nutrition & Lifestyle Hub</h1>
+  <div class="toolbar">
+    <select id="age"><option value="">Age: All</option><option>0-2</option><option>3-5</option><option>6-12</option><option>13-18</option><option>19-24</option><option>Pregnant</option></select>
+    <select id="fmt"><option value="">Format: All</option><option>Video</option><option>Flipbook</option><option>Comic</option><option>Podcast</option><option>Article</option></select>
+    <input id="q" type="search" placeholder="Search titles & abstracts…" style="flex:1;min-width:220px"/>
+  </div>
+  <div id="cards" class="grid">
+<div class="card" data-age="0-2" data-format="Video" data-title="Breastfeeding Basics" data-abstract="Latch and positioning overview">
+  <div class="tag">0-2</div><div class="tag">Video</div>
+  <h3>Breastfeeding Basics</h3><p class="muted">Latch and positioning overview</p>
+  <a class="btn" href="../resources/en/breastfeeding-video.html">Open</a>
+</div>
+<div class="card" data-age="0-2" data-format="Article" data-title="Complementary Feeding Start" data-abstract="When and how to start solids">
+  <div class="tag">0-2</div><div class="tag">Article</div>
+  <h3>Complementary Feeding Start</h3><p class="muted">When and how to start solids</p>
+  <a class="btn" href="../resources/en/compl-feeding-article.html">Open</a>
+</div>
+<div class="card" data-age="3-5" data-format="Comic" data-title="Snack Smart" data-abstract="Fun story on smart snacking">
+  <div class="tag">3-5</div><div class="tag">Comic</div>
+  <h3>Snack Smart</h3><p class="muted">Fun story on smart snacking</p>
+  <a class="btn" href="../resources/en/snack-smart-comic.html">Open</a>
+</div>
+<div class="card" data-age="3-5" data-format="Video" data-title="Play & Move" data-abstract="Active play ideas for preschoolers">
+  <div class="tag">3-5</div><div class="tag">Video</div>
+  <h3>Play & Move</h3><p class="muted">Active play ideas for preschoolers</p>
+  <a class="btn" href="../resources/en/play-move-video.html">Open</a>
+</div>
+<div class="card" data-age="6-12" data-format="Article" data-title="Balanced School Lunch" data-abstract="Budget lunchbox ideas">
+  <div class="tag">6-12</div><div class="tag">Article</div>
+  <h3>Balanced School Lunch</h3><p class="muted">Budget lunchbox ideas</p>
+  <a class="btn" href="../resources/en/lunch-ideas.html">Open</a>
+</div>
+<div class="card" data-age="6-12" data-format="Podcast" data-title="Active Every Day" data-abstract="Short audio on daily activity">
+  <div class="tag">6-12</div><div class="tag">Podcast</div>
+  <h3>Active Every Day</h3><p class="muted">Short audio on daily activity</p>
+  <a class="btn" href="../resources/en/active-podcast.html">Open</a>
+</div>
+<div class="card" data-age="13-18" data-format="Video" data-title="Read Nutrition Labels" data-abstract="Choose better packaged foods">
+  <div class="tag">13-18</div><div class="tag">Video</div>
+  <h3>Read Nutrition Labels</h3><p class="muted">Choose better packaged foods</p>
+  <a class="btn" href="../resources/en/labels-video.html">Open</a>
+</div>
+<div class="card" data-age="13-18" data-format="Article" data-title="Screen Time Balance" data-abstract="Tips to reduce sedentary time">
+  <div class="tag">13-18</div><div class="tag">Article</div>
+  <h3>Screen Time Balance</h3><p class="muted">Tips to reduce sedentary time</p>
+  <a class="btn" href="../resources/en/screen-time-article.html">Open</a>
+</div>
+<div class="card" data-age="19-24" data-format="Video" data-title="Meals on a Budget" data-abstract="College meal planning">
+  <div class="tag">19-24</div><div class="tag">Video</div>
+  <h3>Meals on a Budget</h3><p class="muted">College meal planning</p>
+  <a class="btn" href="../resources/en/budget-meals-video.html">Open</a>
+</div>
+<div class="card" data-age="19-24" data-format="Flipbook" data-title="Quick Meal Guide" data-abstract="Visual quick recipes">
+  <div class="tag">19-24</div><div class="tag">Flipbook</div>
+  <h3>Quick Meal Guide</h3><p class="muted">Visual quick recipes</p>
+  <a class="btn" href="../resources/en/quick-meal-flipbook.html">Open</a>
+</div>
+<div class="card" data-age="Pregnant" data-format="Flipbook" data-title="Breastfeeding Positions" data-abstract="Comfortable positions, latch">
+  <div class="tag">Pregnant</div><div class="tag">Flipbook</div>
+  <h3>Breastfeeding Positions</h3><p class="muted">Comfortable positions, latch</p>
+  <a class="btn" href="../resources/en/breastfeeding-flipbook.html">Open</a>
+</div>
+<div class="card" data-age="Pregnant" data-format="Article" data-title="Antenatal Nutrition" data-abstract="Key nutrients during pregnancy">
+  <div class="tag">Pregnant</div><div class="tag">Article</div>
+  <h3>Antenatal Nutrition</h3><p class="muted">Key nutrients during pregnancy</p>
+  <a class="btn" href="../resources/en/antenatal-article.html">Open</a>
+</div></div>
+</section>
+<script>
+const cards=[...document.querySelectorAll('#cards .card')];
+const age=document.getElementById('age'), fmt=document.getElementById('fmt'), q=document.getElementById('q');
+function apply(){const a=(age.value||'').toLowerCase(), f=(fmt.value||'').toLowerCase(), s=(q.value||'').toLowerCase();
+ cards.forEach(c=>{const ca=c.dataset.age.toLowerCase(), cf=c.dataset.format.toLowerCase();
+ const t=(c.dataset.title||'').toLowerCase(), ab=(c.dataset.abstract||'').toLowerCase();
+ const hit=(!a||ca===a)&&(!f||cf===f)&&(!s||t.includes(s)||ab.includes(s)); c.style.display=hit?'block':'none';});}
+[age,fmt,q].forEach(el=>el.addEventListener('input',apply));
+</script>
+</main>
+<footer><div class="wrap">
+  <div class="grid" style="grid-template-columns:2fr 1fr 1fr">
+    <div><strong>ICMR‑NIN · NULRISC & COPRIME</strong><p class="muted small">Demo site with bilingual structure (EN/HI). Replace placeholders and host on GitHub Pages.</p></div>
+    <div><div class="muted small">Branding & Policy</div><ul><li><a href="#">Brand Guide (PDF)</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    <div><div class="muted small">Follow</div><ul><li><a href="#">YouTube</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+  </div>
+  <p class="muted small">© ICMR‑NIN</p>
+</div></footer>
+</body></html>
