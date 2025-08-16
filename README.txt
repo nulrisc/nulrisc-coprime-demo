@@ -1,13 +1,13 @@
-NULRISC & COPRIME — GitHub‑ready Demo
+NULRISC & COPRIME — Site with Partials Inserted
 
-How to publish
-1) Create a public repo (e.g., nulrisc-coprime-demo).
-2) Upload ALL files/folders from this ZIP to the repo root.
-3) Repo → Settings → Pages → Source: main / root → Save.
-4) Live link: https://<username>.github.io/<repo>/
+Already included:
+- Status banner with setProgrammeStatus(true/false) on Home
+- Programme Overview block on Home
+- Hub featured cards on Home
+- Partner/Funder band on Home
+- Research page with nav, timeline, publications, team, collaborate, updates, events
 
-Replace placeholders
-- PDFs: /assets/pdfs/placeholder.pdf
-- Audio: /assets/audio/sample.wav
-- Images: /assets/img/thumb.png
-- YouTube: open pages in /resources/en/ and swap the video ID.
+Publish:
+1) Upload all files to your repo root.
+2) Settings → Pages → Source: main / root → Save.
+3) Live at https://<username>.github.io/<repo>/
