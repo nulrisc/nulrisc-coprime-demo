@@ -1,1 +1,0 @@
-Place video files (.mp4) here.
